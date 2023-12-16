@@ -1,0 +1,376 @@
+/* Common styles for all screen sizes */
+html {
+    background-color: rgb(0, 0, 0);
+}
+
+body, ul {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+
+}
+
+main {
+    height: 100vh; /* Consider using a relative unit like 'vh' for better responsiveness */
+}
+
+/* Header Styles */
+header {
+    background-image: url(photo_2023-12-12_19-19-37.jpg);
+    color: aliceblue;
+    background-size: cover;
+    height: 866.83px;
+    width: 100vw;
+    transition: height 0.3s ease; /* Add smooth transition for height changes */
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.hamburger-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: aliceblue;
+    margin: 5px 0;
+}
+
+/* Navbar Styles */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px 0 50px;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.nav-list li {
+    margin: 0 10px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px 15px;
+}
+
+/* Container Styles */
+.containers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Social Links Styles */
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+/* About Section Styles */
+.about {
+    display: flex;
+    margin: 5% 0;
+    height: 100vh;
+    position: relative; /* Add position relative */
+}
+
+.about-details {
+    margin: 4% 3% 0 10%;
+    font-size: 1.1rem;
+    width: 50vw;
+    color: rgb(228, 227, 226);
+}
+
+.about-image {
+    height: 90vh;
+    width: 50vw;
+    margin: 5% 5% 5% 10%;
+    border-top: solid red;
+    border-left: solid red;
+    border-width: 10px;
+}
+
+/* Services Section Styles */
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-item-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center; /* Center the container horizontally */
+    margin: 0 5%; /* Adjust margins as needed */
+}
+
+.service-item {
+    background-color: #333;
+    margin: 0 5% 5% 5%;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Name and Social Icon Styles */
+.name {
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+
+.social-icon {
+    font-size: 1.5rem;
+    background-color: transparent;
+    transition: transform ease-in-out 0.3s; /* Adjust the duration for a smoother effect */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Correct syntax for scaling */
+}
+
+
+.nav-brand {
+    list-style: none;
+    font-size: 2rem;
+    margin: 0px 0 0 50px;
+}
+
+/* Button Styles */
+.cv-btn {
+    background-color: rgb(242, 79, 79);
+    border-radius: 20px;
+    width: 120px;
+    margin-top: 50px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cv-btn button {
+    background-color: #d9534f;
+    color: white;
+    font-size: 1rem;
+    border: none;
+}
+
+.cv-btn button:hover {
+    background-color: #d9534f;
+}
+
+/* User Info Styles */
+.user-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.user-info-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.user-info-label {
+    width: 25%;
+}
+
+.user-info-value {
+    flex: 1;
+}
+
+
+/* Paragraph Styles */
+.about-p {
+    line-height: 25px;
+}
+
+/* Service Header Styles */
+.service-header {
+    margin-bottom: 40px;
+    color: whitesmoke;
+}
+
+.service-item-icons{
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+
+
+.service-item-detail{
+    text-align: center;
+    margin-top: 0;
+    padding: 0 0 10px 10px;
+    line-height: 30px;
+}
+
+/* About Section Styles */
+.about {
+    display: flex;
+    margin: 5% 0;
+    height: 100vh;
+    position: relative; /* Add position relative */
+    z-index: 1; /* Set a higher z-index to ensure it's above other elements */
+}
+
+.about-details {
+    margin: 4% 3% 0 10%;
+    font-size: 1.1rem;
+    width: 50vw;
+    color: rgb(228, 227, 226);
+}
+
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 838px) {
+    /* Existing styles for smaller screens */
+
+    header {
+        height: auto;
+        padding: 0px;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .name-details {
+        font-size: 1rem;
+    }
+
+    .hamburger-menu {
+        display: contents;
+    }
+    
+    .nav-brand{
+        margin: 0;
+    }
+
+    .nav-list {
+        opacity: 0; /* Set initial opacity to 0 */
+        visibility: hidden; /* Hide the element initially */
+        flex-direction: column;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        margin: 0;
+        transition: opacity 0.3s ease, visibility 0.3s ease; /* Add transition for opacity and visibility */
+    }
+    
+
+    .nav-list.show {
+        opacity: 1; /* Change opacity to 1 when the 'show' class is added */
+        visibility: visible; /* Make the element visible when the 'show' class is added */
+    }
+
+    .nav-links {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .bar {
+        background-color: aliceblue;
+    }
+
+    .containers {
+        margin: 5%;
+    }
+
+    .user-info-label {
+        margin-right: 0; /* Adjust margin for smaller screens */
+    }
+
+    .cv-btn {
+        text-align: center;
+        width: 90%;
+    }
+
+    .about {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10% 1% 8% 1%;
+        height: auto;
+        z-index: 0;
+    }
+
+    .about-image {
+        width: 90%;
+        height: auto;
+        margin: 20px 5% 20px 5%;
+        border: none;
+    }
+
+    .about-details {
+        height: auto;
+        width: 90%;
+        margin: 20px auto auto auto;
+    }
+
+    .services {
+        margin-top: 20px; /* Adjust margin for smaller screens */
+    }
+
+    .service-item-container {
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0;
+    }
+}
