@@ -1,4 +1,4 @@
-/* Common styles for all screen sizes */
+
 html {
     background-color: rgb(0, 0, 0);
 }
@@ -8,21 +8,19 @@ body, ul {
     margin: 0;
     font-size: 16px;
     font-family: 'Helvetica Neue', Arial, sans-serif;
-
 }
 
 main {
-    height: 100vh; /* Consider using a relative unit like 'vh' for better responsiveness */
+    height: 100vh;
 }
 
-/* Header Styles */
 header {
     background-image: url(photo_2023-12-12_19-19-37.jpg);
     color: aliceblue;
     background-size: cover;
     height: 866.83px;
     width: 100vw;
-    transition: height 0.3s ease; /* Add smooth transition for height changes */
+    transition: height 0.3s ease;
 }
 
 .hamburger-menu {
@@ -44,8 +42,6 @@ header {
     background-color: aliceblue;
     margin: 5px 0;
 }
-
-/* Navbar Styles */
 
 .navbar{
     display: flex;
@@ -77,7 +73,6 @@ a {
     padding: 10px 15px;
 }
 
-/* Container Styles */
 .containers {
     display: flex;
     flex-direction: column;
@@ -93,7 +88,6 @@ a {
     align-items: center;
 }
 
-/* Social Links Styles */
 .social-links {
     display: flex;
     justify-content: center;
@@ -107,12 +101,11 @@ a {
     list-style: none;
 }
 
-/* About Section Styles */
 .about {
     display: flex;
     margin: 5% 0;
     height: 100vh;
-    position: relative; /* Add position relative */
+    position: relative;
 }
 
 .about-details {
@@ -131,7 +124,6 @@ a {
     border-width: 10px;
 }
 
-/* Services Section Styles */
 .services {
     display: flex;
     flex-direction: column;
@@ -142,8 +134,8 @@ a {
 .service-item-container {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center; /* Center the container horizontally */
-    margin: 0 5%; /* Adjust margins as needed */
+    justify-content: center;
+    margin: 0 5%;
 }
 
 .service-item {
@@ -156,23 +148,20 @@ a {
     align-items: center;
 }
 
-/* Name and Social Icon Styles */
 .name {
     font-size: 4rem;
     margin-bottom: 0;
 }
 
-
 .social-icon {
     font-size: 1.5rem;
     background-color: transparent;
-    transition: transform ease-in-out 0.3s; /* Adjust the duration for a smoother effect */
+    transition: transform ease-in-out 0.3s;
 }
 
 .social-icon:hover {
-    transform: scale(1.2); /* Correct syntax for scaling */
+    transform: scale(1.2);
 }
-
 
 .nav-brand {
     list-style: none;
@@ -180,7 +169,6 @@ a {
     margin: 0px 0 0 50px;
 }
 
-/* Button Styles */
 .cv-btn {
     background-color: rgb(242, 79, 79);
     border-radius: 20px;
@@ -202,7 +190,6 @@ a {
     background-color: #d9534f;
 }
 
-/* User Info Styles */
 .user-info {
     display: flex;
     flex-direction: column;
@@ -223,13 +210,10 @@ a {
     flex: 1;
 }
 
-
-/* Paragraph Styles */
 .about-p {
     line-height: 25px;
 }
 
-/* Service Header Styles */
 .service-header {
     margin-bottom: 40px;
     color: whitesmoke;
@@ -240,8 +224,6 @@ a {
     margin-top: 10px;
 }
 
-
-
 .service-item-detail{
     text-align: center;
     margin-top: 0;
@@ -249,13 +231,12 @@ a {
     line-height: 30px;
 }
 
-/* About Section Styles */
 .about {
     display: flex;
     margin: 5% 0;
     height: 100vh;
-    position: relative; /* Add position relative */
-    z-index: 1; /* Set a higher z-index to ensure it's above other elements */
+    position: relative;
+    z-index: 1;
 }
 
 .about-details {
@@ -265,11 +246,7 @@ a {
     color: rgb(228, 227, 226);
 }
 
-
-/* Media Queries for Responsive Design */
 @media only screen and (max-width: 838px) {
-    /* Existing styles for smaller screens */
-
     header {
         height: auto;
         padding: 0px;
@@ -292,8 +269,8 @@ a {
     }
 
     .nav-list {
-        opacity: 0; /* Set initial opacity to 0 */
-        visibility: hidden; /* Hide the element initially */
+        opacity: 0;
+        visibility: hidden;
         flex-direction: column;
         text-align: center;
         background-color: rgb(0, 0, 0);
@@ -303,13 +280,13 @@ a {
         left: 0;
         width: 50%;
         margin: 0;
-        transition: opacity 0.3s ease, visibility 0.3s ease; /* Add transition for opacity and visibility */
+        transition: opacity 0.3s ease, visibility 0.3s ease;
     }
     
 
     .nav-list.show {
-        opacity: 1; /* Change opacity to 1 when the 'show' class is added */
-        visibility: visible; /* Make the element visible when the 'show' class is added */
+        opacity: 1;
+        visibility: visible;
     }
 
     .nav-links {
@@ -332,7 +309,7 @@ a {
     }
 
     .user-info-label {
-        margin-right: 0; /* Adjust margin for smaller screens */
+        margin-right: 0;
     }
 
     .cv-btn {
@@ -364,7 +341,7 @@ a {
     }
 
     .services {
-        margin-top: 20px; /* Adjust margin for smaller screens */
+        margin-top: 20px;
     }
 
     .service-item-container {
